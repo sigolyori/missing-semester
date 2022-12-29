@@ -208,12 +208,7 @@ are also called "verbs", because verbs act on nouns.
 
 You can combine nouns and verbs with a count, which will perform a given action
 a number of times.
-
-- `3w` move 3 words forward
-- `5j` move 5 lines down
-- `7dw` delete 7 words
-
-## Modifiers
+- `3w` move 3 words forward - `5j` move 5 lines down - `7dw` delete 7 words ## Modifiers
 
 You can use modifiers to change the meaning of a noun. Some modifiers are `i`,
 which means "inner" or "inside", and `a`, which means "around".
@@ -229,16 +224,19 @@ implementation:
 
 ```python
 def fizz_buzz(limit):
-    for i in range(limit):
+    for i in range(1, limit):
         if i % 3 == 0:
-            print('fizz')
+            print('fizz', end=' ')
         if i % 5 == 0:
-            print('fizz')
+            print('buzz')
         if i % 3 and i % 5:
             print(i)
 
 def main():
     fizz_buzz(10)
+
+if __main__ == __name__:
+    main()
 ```
 
 We will fix the following issues:

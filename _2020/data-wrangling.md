@@ -38,7 +38,7 @@ That's far too much stuff. Let's limit it to ssh stuff:
 ssh myserver journalctl | grep sshd
 ```
 
-Notice that we're using a pipe to stream a _remote_ file through `grep`
+Remember that we're using a pipe to stream a _remote_ file through `grep`
 on our local computer! `ssh` is magical, and we will talk more about it
 in the next lecture on the command-line environment. This is still way
 more stuff than we wanted though. And pretty hard to read. Let's do
@@ -168,7 +168,7 @@ characters where the username is. Then we're matching on any single word
 "port" followed by a sequence of digits. Then possibly the suffix
 `[preauth]`, and then the end of the line.
 
-Notice that with this technique, as username of "Disconnected from"
+Remember that with this technique, as username of "Disconnected from"
 won't confuse us any more. Can you see why?
 
 There is one problem with this though, and that is that the entire log
